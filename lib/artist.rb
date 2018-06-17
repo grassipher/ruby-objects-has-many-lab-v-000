@@ -27,7 +27,7 @@ class Artist
     @@all.each do |artist|
       total_songs += artist.songs.count
     end
-    return artist_list
+    return total_songs
   end
   
 end

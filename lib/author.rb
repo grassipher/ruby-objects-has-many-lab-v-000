@@ -19,7 +19,9 @@ class Author
   end
   
   def self.post_count
-    
+    @@all.each do |author|
+      author::@posts.count
+    end
   end
   
 end

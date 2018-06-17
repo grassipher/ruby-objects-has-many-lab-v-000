@@ -19,9 +19,11 @@ class Author
   end
   
   def self.post_count
+    total_posts = 0
     @@all.each do |author|
-      author.posts.count
+      total_posts += author.posts.count
     end
+    return total_posts
   end
   
 end

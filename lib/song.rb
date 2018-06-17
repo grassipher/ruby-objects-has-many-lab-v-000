@@ -8,7 +8,9 @@ class Song
   end
   
   def self.all
-    @@all
+    @@all.collect do |song|
+      song.name
+    end
   end
   
   def artist_name

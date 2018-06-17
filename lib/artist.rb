@@ -23,7 +23,8 @@ class Artist
   end
   
   def self.song_count
-    total_songs = 0    self.each do |artist|
+    total_songs = 0
+    @@all.each do |artist|
       artist_list << artist.songs.count
     end
     return artist_list
